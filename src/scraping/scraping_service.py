@@ -18,7 +18,8 @@ class ScrapingService:
             else:
                 raise Exception("Couldn't find valid information from provided URL")
     
-        self.scrape_kibana_dashboard(dashboard_url)
+        exams_data = self.scrape_kibana_dashboard(dashboard_url)
+        return exams_data
     
     def scrape_plataforma_saude(self):
         web_page = requests.get(self.url)
