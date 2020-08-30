@@ -8,12 +8,12 @@ Imagine que um gestor público entra hoje no Farol e quer ter a possibilidade de
 
 Na aba de Farol Covid, depois de ver todos os dados sobre o município selecionado existe a sessão 'COMO SEGUIR COM SEGURANÇA?' com os banners 'SIMULA COVID' e 'SAÚDE EM ORDEM' a ideia seria colocar um terceiro banner com o nome 'COMPARE SEU MUNICÍPIO'.
 
-![banners](./images/como-seguir-com-seguranca.png)
+![banners](images/como-seguir-com-seguranca.png)
 
 Ao clicar para comparar o município apareceria para o usuário duas barras de seleção iguais a do início do farol covid, com a primeira com o título: "Seu Município" e selecionado os mesmos campos já previamente selecionados pelo usuário no farol, mas com a opção de mudar a seleção. A segunda teria o título 'Município a comparar' e a barra estaria em branco.
 
-![seu municipio](./images/seu-município.png)
-![municipio a comparar](./images/município-a-comparar.png)
+![seu municipio](images/seu-município.png)
+![municipio a comparar](images/município-a-comparar.png)
 
 A ideia é gerar um segundo farol com os dados do segundo município e comparar os índices com os índices do primeiro município. Primeiro apareceriam os dados dos dois municípios, e então uma terceira sessão com as informações de comparação. Por exemplo a caixa 'Ritmo de Contágio' teria uma comparação de em média no município X cada contaminado infecta Z menos pessoas que no município Y. Isso para cada uma das caixas com os dados, sempre utilizando o município do usuário como comparação. Dessa forma o usuário tem ideia dos dados brutos de cada município mas também do tamanho da diferença entre os dois.
 
