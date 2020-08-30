@@ -6,7 +6,7 @@
 2. [Que tal coletar dados de testagem da Covid-19?](#coleta-testes)
     1. [Descrição da Solução](#coleta-solucao)
 
-## 1. Como comparar municípios? (descritiva)<a name="comparar-municipios">
+## 1. Como comparar municípios?<a name="comparar-municipios">
 ### Desafio:
 Imagine que um gestor público entra hoje no Farol e quer ter a possibilidade de comparar seu município com outros municípios de seu interesse. Com base no que implementamos até hoje no código do Farol, o que você faria para adicionar essa comparação na ferramenta? Nos descreva o passo a passo e a lógica por trás do código: Como apresentaria essa informação? Quais elementos e funções que já temos hoje você usaria? Quais novas funções você criaria?
 
