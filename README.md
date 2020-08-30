@@ -145,21 +145,16 @@ A solução foi construída em camadas, cada uma com uma função específica e 
 
 **scraping**
 
-*Bibliotecas utilizadas:*
-
-*Selenium*
-
-*BeautifulSoup*
-
+*Bibliotecas utilizadas:*</br>
+*Selenium*</br>
+*BeautifulSoup*</br>
 Primeiramente o `beautiful_soup_service.py` faz a raspagem do código fonte da página http://plataforma.saude.gov.br/coronavirus/virus-respiratorios/ para encontrar a url do dashboard feito no kibana que exibe os dados sobre os exames para vírus respiratórios.
 Depois o `selenium_service.py` utiliza um objeto da classe `Browser` (classe que extende a classe `selenium.webdriver.Chrome`) para abrir e navegar pelo dashboard, após interagir com a página e abrir a aba que exibe os dados necessários para a análise, a funcão `crawl_kibana_dashboard()` retorna a html completa do que está sendo exibido na tela. Usa-se novamente o `beautiful_soup_service.py`, desta vez para extrair o json que contém as respostas e transformá-lo em dicionário. As manipulações desses objetos são todas orquestradas pelo `scraping_service.py`, sua função principal `scrape_content()` retorna justamente o dicionário com as informações de exames por estado.
 
 **data_treatment**
 
-*Biblioteca utilizada:*
-
-*pandas*
-
+*Biblioteca utilizada:*</br>
+*pandas*</br>
 A classe `DataExtraction` contém funções para extrair apenas os dados necessários do dicionário com os dados dos estados, após fazer isso seu método `extract_exams_per_state()` retorna um DataFrame da biblioteca pandas, com as informações extraídas.
 O arquivo `analysis_service.py` tem a função de criar uma coluna que calcula, para cada estado, a porcentagem de exames positivos / detectáveis sobre o total de exames daquele estado. A classe `DataTreatmentService` orquestra essas manipulações de dados e sua função `get_positive_percentage_per_state_dataframe` retorna um dataframe apenas com as colunas 'UF' e '% Positivo / Detectável'.
 
