@@ -6,11 +6,11 @@
 2. [Que tal coletar dados de testagem da Covid-19?](#coleta-testes)
     1. [Descrição da Solução](#coleta-solucao)
 
-## 1. Como comparar municípios? (descritiva)<a href="comparar-municipios">
+## 1. Como comparar municípios? (descritiva)<a name="comparar-municipios">
 ### Desafio:
 Imagine que um gestor público entra hoje no Farol e quer ter a possibilidade de comparar seu município com outros municípios de seu interesse. Com base no que implementamos até hoje no código do Farol, o que você faria para adicionar essa comparação na ferramenta? Nos descreva o passo a passo e a lógica por trás do código: Como apresentaria essa informação? Quais elementos e funções que já temos hoje você usaria? Quais novas funções você criaria?
 
-### Solução:<a href="comparar-solucao">
+### Solução:<a name="comparar-solucao">
 **Alto Nível:**
 
 Na aba de Farol Covid, depois de ver todos os dados sobre o município selecionado existe a sessão 'COMO SEGUIR COM SEGURANÇA?' com os banners 'SIMULA COVID' e 'SAÚDE EM ORDEM' a ideia seria colocar um terceiro banner com o nome 'COMPARE SEU MUNICÍPIO'.
@@ -131,7 +131,7 @@ IndicatorCards: Dict[str, Indicator] = {
 
 Para implementar como mostrar as informações comparadas na tela teria que criar uma nova função, no arquivo `src/pages/compara_municipo.py`, que seria parecida com a `update_indicators()` mas para esses novos indicadores de comparação. Que vai simplesmente fazer a diferença dos indicadores de cada município já previamente calculado. Para renderizar na página os cartões, usaria a função `genKPISection` do arquivo `src/pages/utils.py`
 
-## 2. Que tal coletar dados de testagem da Covid-19?<a href="coleta-testes">
+## 2. Que tal coletar dados de testagem da Covid-19?<a name="coleta-testes">
 ### Desafio:
 O Ministério da Saúde disponibiliza hoje em sua Plataforma Integrada de Vigilância em Saúde os dados de testagem dos estados brasileiros. O nível de testagem de um estado é uma variável improtante para determinar o quanto de controle ele tem sobre como a doença está disseminada em sua população. Esta plataforma contém os dados sobre testes RT-PCR realizados em todos os estados até hoje. Você deve criar um script que realiza a raspagem dos dados de exames por estado.
 
@@ -140,7 +140,7 @@ O Ministério da Saúde disponibiliza hoje em sua Plataforma Integrada de Vigil�
 * Para avaliação final iremos rodar seu código em https://repl.it/, sugerimos que teste previamente a plataforma.
 * O código deve rodar em Python 3.8.2.
 
-### Solução:<a href="coleta-solucao">
+### Solução:<a name="coleta-solucao">
 A solução foi construída em camadas, cada uma com uma função específica e a camada superior é chamada pelo arquivo `app.py`
 
 **scraping**
