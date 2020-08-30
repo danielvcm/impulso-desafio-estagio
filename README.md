@@ -1,10 +1,10 @@
 # impulso-desafio-estagio
 
 ## Sumário
-1. [Como comparar municípios?](comparar-municipios)
-    1. [Descrição da Solução](comparar-solucao)
-2. [Que tal coletar dados de testagem da Covid-19?](coleta-testes)
-    1. [Descrição da Solução](coleta-solucao)
+1. [Como comparar municípios?](#comparar-municipios)
+    1. [Descrição da Solução](#comparar-solucao)
+2. [Que tal coletar dados de testagem da Covid-19?](#coleta-testes)
+    1. [Descrição da Solução](#coleta-solucao)
 
 ## 1. Como comparar municípios? (descritiva)<a href="comparar-municipios">
 ### Desafio:
